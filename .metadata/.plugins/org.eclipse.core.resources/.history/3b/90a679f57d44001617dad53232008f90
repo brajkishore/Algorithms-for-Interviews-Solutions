@@ -1,0 +1,38 @@
+package com.algo;
+
+public class IntegerSquareRoot {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println(sqroot(4));
+	}
+	
+	public static int sqroot(int n){
+		
+		if(n==0||n==1)
+			return n;
+		
+		int l=0,r=n/2;
+		int midS=0,ans=0;
+		while(l<=r){
+			
+			int mid=l+((r-l)/2);
+			midS=mid*mid;
+			System.out.println("checking for "+midS+" "+mid);
+			if(midS==n)
+				return mid;
+			
+			if(midS<n)
+			{
+				l=mid+1;	
+				ans=mid;
+			}else
+				r=mid-1;
+			
+		}
+		
+		return mid;		
+	}
+
+}
