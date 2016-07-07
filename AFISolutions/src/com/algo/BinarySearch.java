@@ -21,7 +21,7 @@ public class BinarySearch {
 			
 			mid=l+((r-l)/2);
 			
-			System.out.println("at mid "+mid);
+			//System.out.println("at mid "+mid);
 			if(A[mid]==k)
 				return mid;
 			else if(A[mid]<k){
