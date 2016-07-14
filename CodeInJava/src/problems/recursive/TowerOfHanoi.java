@@ -19,7 +19,6 @@ public class TowerOfHanoi {
 	}
 	
 	
-	
 	public static void towerOfHanoi(int discNum, char fromTower, char toTower,
 			char auxTower) {
 
