@@ -1,0 +1,36 @@
+package com.algo;
+
+public class LargerthanK {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public static int searchStrictLarger(int[] A,int k){
+		
+		if(A.length==0)
+			return -1;
+		
+		int l=0,r=A.length,mid=0;
+		while(l<r){
+			
+			mid=l+((r-l)/2);
+			
+			System.out.println("at mid "+mid);
+			if(A[mid]==k)
+				return mid;
+			else if(A[mid]<k){
+				/*k may lie on right of mid*/
+				l=mid+1;				
+			}
+			else /*k may lie on right of mid*/
+				r=mid;
+								
+		}
+		return -1;
+	
+	}
+
+
+}
